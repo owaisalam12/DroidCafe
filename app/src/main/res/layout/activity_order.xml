@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity">
+<TextView
+    android:id=	"@+id/order_intro_text"
+    android:layout_width="match_parent"
+    android:layout_marginTop="24dp"
+    android:layout_marginBottom="6dp"
+    android:textSize="18sp"
+    android:text="Choose a delivery method:"
+    android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/order_intro_text">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Same day messenger service"
+            android:onClick="onRadioButtonClicked"
+            android:id=	"@+id/sameday"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next day ground delivery"
+            android:onClick="onRadioButtonClicked"
+            android:id=	"@+id/nextday"
+            />
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick up"
+        android:onClick="onRadioButtonClicked"
+        android:id=	"@+id/pickup"
+        />
+    </RadioGroup>
+
+</RelativeLayout>
